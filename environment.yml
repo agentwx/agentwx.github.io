@@ -1,10 +1,36 @@
-name: xeus-kernel
+name: xeus-kernels
 channels:
   - https://repo.mamba.pm/emscripten-forge
   - conda-forge
 dependencies:
-  - python=3.11
   - xeus-python
-  - ipycanvas
+  - xeus-lua
+  - xeus-javascript
+  - xeus-cpp
   - numpy
   - matplotlib
+  - pillow
+  - ipywidgets
+  - requests
+  - httpx
+  - pandas
+  - pydantic
+  - pyquery
+  - pyyaml
+  - scipy
+  - sympy
+  - pillow
+  - openpyxl
+  - websocket-client
+  - jinja2
+  - shapely
+  # 无法安装的库
+  # - paramiko
+  # - black
+  # - isort
+  
+  # 能安装但无法使用
+  # - scikit-learn
+  - pip:
+      - ipycanvas
+      - tqdm
